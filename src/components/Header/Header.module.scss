@@ -1,0 +1,13 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 130px;
+}
+.logo{
+    @media screen and (max-width:800px) {
+        &{
+            display: none;
+        }
+    }
+}

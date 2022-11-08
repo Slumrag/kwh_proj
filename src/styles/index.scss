@@ -1,0 +1,23 @@
+@import-normalize;
+@import './shared/_reset.scss';
+@import './shared/_colors.scss';
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600);
+$box-shadow:0px 10px 15px rgba(0, 0, 0, 0.1),
+0px 4px 6px rgba(0, 0, 0, 0.05);
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: $text-primary;
+    font-family:"Inter", sans-serif;
+}
+.container{
+    // box-sizing: content-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+// .container>div{
+//     box-sizing: border-box;
+// }
