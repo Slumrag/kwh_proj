@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kwh_proj/static/css/main.63090590.css",
+    "main.js": "/kwh_proj/static/js/main.3c10618e.js",
+    "static/media/logo.svg": "/kwh_proj/static/media/logo.f993894673717076f795c356e91edb5b.svg",
+    "index.html": "/kwh_proj/index.html",
+    "main.63090590.css.map": "/kwh_proj/static/css/main.63090590.css.map",
+    "main.3c10618e.js.map": "/kwh_proj/static/js/main.3c10618e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63090590.css",
+    "static/js/main.3c10618e.js"
+  ]
+}
