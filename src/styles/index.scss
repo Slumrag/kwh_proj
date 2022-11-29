@@ -1,9 +1,9 @@
 @import-normalize;
-@import './shared/_reset.scss';
-@import './shared/_colors.scss';
+@import './shared/reset';
+@import './shared/colors';
+@import './shared/fonts';
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600);
-$box-shadow:0px 10px 15px rgba(0, 0, 0, 0.1),
-0px 4px 6px rgba(0, 0, 0, 0.05);
+
 html,
 body {
     height: 100%;

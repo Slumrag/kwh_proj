@@ -1,0 +1,59 @@
+@import '../../styles/shared/fonts';
+@import '../../styles/shared/colors';
+.Radio{
+    // background-color:red;
+    display: flex;
+    gap: 10px;
+    position: relative;
+   
+    
+        [type='radio']:checked,
+        [type="radio"]:not(:checked)
+        {
+            // position: absolute;
+                // left: -9999px;
+                opacity: 0;
+        }
+        [type="radio"]:checked+label:before,
+        [type="radio"]:not(:checked)+label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $button-primary;
+            border-radius: 50%;
+            background: $white;
+        }
+
+        [type="radio"]:checked+label:after,
+        [type="radio"]:not(:checked)+label:after {
+            content: '';
+            box-sizing: content-box;
+            width: 4px;
+            height: 4px;
+            background: $white;
+            position: absolute;
+            top: calc((18px - 18px) / 2);
+            left: calc((18px - 18px) / 2);
+            border: 8px solid $button-primary;
+            border-radius: 50%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        [type="radio"]:not(:checked)+label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        [type="radio"]:checked+label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    
+   
+}

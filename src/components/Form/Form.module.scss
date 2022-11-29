@@ -1,0 +1,29 @@
+@import '../../styles/shared/fonts';
+@import '../../styles/shared/colors';
+.Form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    row-gap: 30px;
+    padding: 40px;
+    box-shadow: $box-shadow;
+    max-width: max-content;
+    border-radius: 20px;
+
+}
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 25px ;
+    // margin-bottom: 15px;
+    
+}
+.legend{
+    margin-bottom: 15px;
+    @include h6;
+}
+.radioOptions{
+    display: flex;
+    gap: 20px;
+}
