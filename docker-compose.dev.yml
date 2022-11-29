@@ -1,0 +1,15 @@
+version: "4.13"
+services:
+  frontend:
+    stdin_open: true
+    container_name: kwh-dev
+    image: kwh-dev
+    build: 
+      context: .
+      target: development
+    volumes:
+      - type: bind
+        source: ./src
+        target: /app/src
+    ports:
+      - 3000:3000

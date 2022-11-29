@@ -1,0 +1,8 @@
+version: "4.13"
+services:
+  frontend:
+    container_name: kwh-prod
+    image: kwh-prod
+    build: 
+      context: .
+      target: production
